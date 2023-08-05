@@ -18,21 +18,21 @@ namespace DammioShop
             {
                 try
                 {
-                    SqlHelper sqlHelper = new SqlHelper();
-                    string sqlQuery = "SELECT * FROM clothings";
+                    //SqlHelper sqlHelper = new SqlHelper();
+                    //string sqlQuery = "SELECT * FROM clothings";
 
-                    // Using DataTable
-                    DataTable dataTable = sqlHelper.ExecuteDataTable(sqlQuery);
-                    DataRow[] rows = dataTable.Select();
-                    foreach (DataRow row in rows)
-                    {
-                        var id = row["id"];
-                        var name = row["name"];
-                        var description = row["description"];
-                        var price = row["price"];
+                    //// Using DataTable
+                    //DataTable dataTable = sqlHelper.ExecuteDataTable(sqlQuery);
+                    //DataRow[] rows = dataTable.Select();
+                    //foreach (DataRow row in rows)
+                    //{
+                    //    var id = row["id"];
+                    //    var name = row["name"];
+                    //    var description = row["description"];
+                    //    var price = row["price"];
 
-                        Response.Write($"ID: {id}, Name: {name}, Description: {description}, Price: {price}<br>");
-                    }
+                    //    Response.Write($"ID: {id}, Name: {name}, Description: {description}, Price: {price}<br>");
+                    //}
 
                     // Using SqlCommand
                     //string connectionString = "Data Source=THANHTUAN;Initial Catalog=dammio_shop;Integrated Security=True;";
